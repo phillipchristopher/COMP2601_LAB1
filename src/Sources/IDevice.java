@@ -11,6 +11,9 @@ public abstract class IDevice{
      * @param purpose The purpose of the IDevice.
      */
     IDevice(final String purpose){
+        if(purpose == null || purpose.isBlank()){
+            throw new IllegalArgumentException("invalid purpose: " + purpose);
+        }
         this.purpose = purpose;
     }
 

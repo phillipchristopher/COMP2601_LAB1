@@ -5,8 +5,8 @@
  * @version 1.0
  */
 public class IPhoneFifteen extends IPhone {
-    private boolean highResCamera;
-    private int     memoryGb;
+    private final boolean highResCamera;
+    private final int     memoryGb;
 
     private static final int HASHCODE_INTEGER = 97;
 
@@ -37,30 +37,12 @@ public class IPhoneFifteen extends IPhone {
     }
 
     /**
-     * Sets whether the phone has a high-resolution camera.
-     *
-     * @param highResCamera true to indicate the phone has a high-resolution camera; false otherwise
-     */
-    public void setHighResCamera(final boolean highResCamera) {
-        this.highResCamera = highResCamera;
-    }
-
-    /**
      * Returns the memory size of the phone in gigabytes.
      *
      * @return the memory size of the phone in gigabytes
      */
     public int getMemoryGb() {
         return memoryGb;
-    }
-
-    /**
-     * Sets the memory size of the phone in gigabytes.
-     *
-     * @param memoryGB the memory size to set
-     */
-    public void setMemoryGb(final int memoryGB) {
-        this.memoryGb = memoryGB;
     }
 
     /**
